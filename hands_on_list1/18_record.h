@@ -4,4 +4,4 @@ struct record
     int data;
 };
 
-char *RECORD_FILE = "path/to/file";
+char *RECORD_FILE = "./18.txt";

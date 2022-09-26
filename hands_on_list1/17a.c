@@ -17,7 +17,7 @@ Roll No:MT2022028
 #include <sys/types.h>
 #include <unistd.h>
 
-char *tf = "path/to/file";
+char *tf = "./ticket.txt";
 
 int isLocked(int fd);
 

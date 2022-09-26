@@ -17,7 +17,7 @@ Roll No:MT2022028
 #include <sys/types.h>
 #include <unistd.h>
 
-char *tf = "path/to/file";
+char *tf = "./ticket.txt";
 
 int isLocked(int fd);
 
@@ -67,9 +67,12 @@ int main(int argc, char const *argv[])
     }
 
     buff[3] = '\0';
+    int dp = atoi(buff);
+    printf("ticket number before increment:%d\n",dp);
+    dp++;
 
-    printf("Ticket number: %s\n", buff);
 
+    printf("Ticket number after increment: %d\n", dp);
     close(fd);
 
     return 0;
